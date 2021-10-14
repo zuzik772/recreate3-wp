@@ -26,15 +26,18 @@ header .mainnav i {
 }
 
 header .mainnav a {
-  margin-right: 3px;
+  color: #a1a1a1;
+}
+header .mainnav a:first-child {
+  color: #363636;
 }
 
 header .mainnav .logo {
-  border-radius: 100px;
+  border-radius: 25px;
   border: none;
   background-color: var(--primaryColor);
   color: white;
-  padding: 4px 6px;
+  padding: 5px 8px;
 }
 
 header .mainnav input,
@@ -67,4 +70,19 @@ header .mainnav button:last-of-type {
   color: white;
   border-radius: 25px;
   padding: 5px 12px;
+}
+
+@media screen and (max-width: 500px) {
+  header .mainnav div {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header .mainnav ul {
+    flex-direction: column;
+  }
+  header .mainnav input {
+    display: none;
+  }
 }
