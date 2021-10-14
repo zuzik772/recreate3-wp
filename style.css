@@ -162,3 +162,16 @@ nav a span {
     padding-top: 1rem;
   }
 }
+
+/* main */
+main ul {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    color: var(--lightColor);
+}
+
+main ul li:first-child {
+    color: var(--darkColor);
+    font-weight: 600;
+}
