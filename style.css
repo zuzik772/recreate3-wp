@@ -1,0 +1,70 @@
+:root {
+  --primaryColor: #2fdab8;
+  --primaryFont: "Helvetica";
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: var(--primaryFont);
+}
+
+header .mainnav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .mainnav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+header .mainnav i {
+  margin-right: 3px;
+}
+
+header .mainnav a {
+  margin-right: 3px;
+}
+
+header .mainnav .logo {
+  border-radius: 100px;
+  border: none;
+  background-color: var(--primaryColor);
+  color: white;
+  padding: 4px 6px;
+}
+
+header .mainnav input,
+header .mainnav .input {
+  border: none;
+  background-color: whitesmoke;
+  padding: 3px 10px;
+  border-radius: 25px;
+}
+
+header .mainnav .input i {
+  margin: 0;
+  color: #a1a1a1;
+}
+
+header .mainnav div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header .mainnav button {
+  border: none;
+  color: #a1a1a1;
+  background-color: white;
+}
+
+header .mainnav button:last-of-type {
+  background-color: var(--primaryColor);
+  color: white;
+  border-radius: 25px;
+  padding: 5px 12px;
+}
