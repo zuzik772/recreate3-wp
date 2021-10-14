@@ -12,6 +12,9 @@
   text-decoration: none;
   font-family: var(--primaryFont);
 }
+body {
+  margin: 0;
+}
 
 /* main nav */
 header .mainnav {
@@ -121,13 +124,22 @@ nav h1 {
   text-align: center;
   padding: 2rem 0;
   margin: 0;
+  position: relative;
+}
+
+nav h1 i {
+  position: absolute;
+  right: 2vw;
+  top: 2vw;
+  color: var(--lightColor);
+  cursor: pointer;
 }
 
 nav ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   border-top: var(--lightColor) 1px solid;
-  margin-top: 0;
+  margin: 0;
 }
 
 nav a {
@@ -165,13 +177,50 @@ nav a span {
 
 /* main */
 main ul {
-    margin-top: 2rem;
-    display: flex;
-    gap: 1.5rem;
-    color: var(--lightColor);
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  color: var(--lightColor);
+  grid-column: 1/-1;
 }
 
 main ul li:first-child {
+  color: var(--darkColor);
+  font-weight: 600;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 300px));
+  gap: 2rem;
+  background-color: rgb(240, 240, 240);
+  padding-left: 3rem;
+}
+
+main div {
+  position: relative;
+}
+
+p {
+  margin: 0;
+}
+aside {
+    position: absolute;
+    top: 50%;
+    left: 30%;
     color: var(--darkColor);
-    font-weight: 600;
+}
+.price {
+  width: 20%;
+  text-align: center;
+  background-color: var(--primaryColor);
+  color: white;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.soldout {
+  opacity: 0.3;
 }
